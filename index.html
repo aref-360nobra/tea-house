@@ -10,6 +10,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a04bede896.js" crossorigin="anonymous"></script>
+    <!-- custom tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
 
     <style>
         * {
@@ -20,16 +33,25 @@
 </head>
 
 <body>
-    <header>
-        <div class="p-5 absolute right-0">
-            <input type="checkbox" value="light" class="toggle theme-controller" />
+    <header class="container mx-auto">
+        <div class="m-5 absolute right-0">
+            <input type="checkbox" checked value="light" class="toggle theme-controller" />
         </div>
-        <div class="hero min-h-screen rounded">
+        <div class="hero rounded">
             <div class="hero-content flex-col  lg:flex-row-reverse">
-                <img src="images/banner.png" class="max-w-sm rounded-lg shadow-2xl" />
+                <div>
+                    <img src="images/banner.png" class="max-w-sm" />
+                    <div class="-mt-16 ml-3 flex items-center gap-3 bg-base-100 w-60 p-5 rounded-xl drop-shadow-lg">
+                        <i class="fa-solid fa-star text-3xl text-[#ffc850]"></i>
+                        <div>
+                            <h3 class="text-3xl">5.00</h3>
+                            <p>Trust Pilot Ratings</p>
+                        </div>
+                    </div>
+                </div>
 
                 <div>
-                    <h1 class="text-5xl font-black leading-[60px]">It's good <br>
+                    <h1 class="text-5xl font-extrabold leading-[60px]">It's good <br>
                         tea time at The <br> Tea House</h1>
                     <p class="py-6 font-medium text-[18px]">Tea and Botanical Solutions Supplier Give Optimum <br>
                         Satisfaction To Your
@@ -40,16 +62,12 @@
             </div>
         </div>
     </header>
-    <main>
+    <main class="container mx-auto">
         <!-- featured product start -->
-        <section>
+        <section class="text-center">
             <h3 class="md:text-5xl text-3xl font-black text-center mt-24">Our Featured Products</h3>
             <p class="font-medium text-base text-center px-[50px] md:px-[350px] mt-5">There are many variations of
-                passages of Lorem
-                Ipsum
-                available,
-                but the
-                majority have suffered alteration
+                passages of Lorem Ipsum available, but the majority have suffered alteration
                 in some form,
                 by injected humour, or randomised words which don't look even slightly believable.</p>
             <div class="flex flex-col md:flex-row mt-24 items-center md:justify-around">
@@ -57,7 +75,7 @@
                 <div class="card w-64 bg-base-100 shadow-2xl">
                     <figure><img src="images/tea-1.png" alt="tea" /></figure>
                     <div class="card-body">
-                        <h2 class="card-title">Milk Tea</h2>
+                        <h2 class="card-title mx-auto">Milk Tea</h2>
                         <p>Creamer could be replaced by fresh milk</p>
                     </div>
                 </div>
@@ -65,7 +83,7 @@
                 <div class="card w-64 bg-base-100 shadow-2xl">
                     <figure><img src="images/tea-2.png" alt="tea" /></figure>
                     <div class="card-body">
-                        <h2 class="card-title">Black Tea</h2>
+                        <h2 class="card-title mx-auto">Black Tea</h2>
                         <p>Creamer could be replaced by fresh milk</p>
                     </div>
                 </div>
@@ -73,7 +91,7 @@
                 <div class="card w-64 bg-base-100 shadow-2xl">
                     <figure><img src="images/tea-3.png" alt="tea" /></figure>
                     <div class="card-body">
-                        <h2 class="card-title">Lemon Tea</h2>
+                        <h2 class="card-title mx-auto">Lemon Tea</h2>
                         <p>Creamer could be replaced by fresh milk</p>
                     </div>
                 </div>
@@ -81,14 +99,118 @@
                 <div class="card w-64 bg-base-100 shadow-2xl">
                     <figure><img src="images/tea-4.png" alt="tea" /></figure>
                     <div class="card-body">
-                        <h2 class="card-title">Green Tea</h2>
+                        <h2 class="card-title mx-auto">Green Tea</h2>
                         <p>Creamer could be replaced by fresh milk</p>
                     </div>
                 </div>
             </div>
         </section>
         <!-- featured product end -->
+        <!-- great tea start -->
+        <section></section>
+        <!-- great tea end -->
+        <!-- super clients start -->
+        <section></section>
+        <!-- super clients end -->
+        <!-- news and events start -->
+        <section class="mt-32">
+            <h3 class="md:text-5xl text-3xl text-center my-5 font-extrabold">News & Events</h3>
+            <p class="w-[900px] text-center mx-auto font-medium mb-12">There are many variations of passages of Lorem
+                Ipsum available, but the majority have
+                suffered alteration
+                in some form,
+                by injected humour, or randomised words which don't look even slightly believable.</p>
+            <div class="flex md:flex-row flex-col justify-around">
+                <!-- card 1 -->
+                <div>
+                    <div class="card w-96 bg-base-100 shadow-xl border-gray-400">
+                        <figure><img src="images/news-1.png" alt="tea" /></figure>
+                        <div class="card-body">
+                            <h2 class="card-title font-extrabold">
+                                Collecting 8 points for discount
+                            </h2>
+                            <p>There are many variations of passages of Lorem Ipsum available.</p>
+                            <div class="card-actions justify-start">
+                                <div class="badge ">Learn More</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card 2 -->
+                <div>
+                    <div class="card w-96 bg-base-100 shadow-xl border-gray-400">
+                        <figure><img src="images/news-2.png" alt="tea" /></figure>
+                        <div class="card-body">
+                            <h2 class="card-title font-extrabold">
+                                Collecting 8 points for discount
+                            </h2>
+                            <p>There are many variations of passages of Lorem Ipsum available.</p>
+                            <div class="card-actions justify-start">
+                                <div class="badge ">Learn More</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card 3 -->
+                <div>
+                    <div class="card w-96 bg-base-100 shadow-xl border-gray-400">
+                        <figure><img src="images/news-3.png" alt="tea" /></figure>
+                        <div class="card-body">
+                            <h2 class="card-title font-extrabold">
+                                Collecting 8 points for discount
+                            </h2>
+                            <p>There are many variations of passages of Lorem Ipsum available.</p>
+                            <div class="card-actions justify-start">
+                                <div class="badge ">Learn More</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- news and events end -->
     </main>
+    <footer class="footer p-10 mt-32 bg-base-200 text-base-content">
+        <!-- <div class="block justify-around w-full">
+            <div class="w-16">
+                <img src="images/cup.png" alt="">
+            </div>
+            <div>
+                <h4 class="text-[20px] font-medium">Ready to get strated?</h4>
+                <button class="btn btn-primary">Get Started</button>
+            </div>
+        </div> -->
+        <nav>
+            <h6 class="footer-title">Quick Links</h6>
+            <a class="link link-hover">Home</a>
+            <a class="link link-hover">About Us</a>
+            <a class="link link-hover">Insurance</a>
+            <a class="link link-hover">Privacy Policy</a>
+        </nav>
+        <nav>
+            <h6 class="footer-title">Our Service</h6>
+            <a class="link link-hover">Car Insurance</a>
+            <a class="link link-hover">Health Insurance</a>
+            <a class="link link-hover">House Insurance</a>
+        </nav>
+        <nav>
+            <h6 class="footer-title">Help</h6>
+            <a class="link link-hover">FAQs</a>
+            <a class="link link-hover">Contact US</a>
+        </nav>
+        <form>
+            <h6 class="footer-title">Subscribe to our Newsletter</h6>
+            <fieldset class="form-control w-80">
+                <label class="label">
+                    <span class="label-text">Enter your email address</span>
+                </label>
+                <div class="join">
+                    <input type="text" placeholder="username@site.com" class="input input-bordered join-item" />
+                    <button class="btn btn-primary join-item">Subscribe</button>
+                </div>
+            </fieldset>
+        </form>
+    </footer>
 </body>
 
 </html>
