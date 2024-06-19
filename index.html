@@ -5,10 +5,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tea House</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            font-family: "Manrope", sans-serif;
+        }
+    </style>
+
 </head>
 
 <body>
+    <header>
+        <div class="p-5 absolute right-0">
+            <input type="checkbox" value="light" class="toggle theme-controller" />
+        </div>
+        <div class="hero min-h-screen rounded">
+            <div class="hero-content flex-col  lg:flex-row-reverse">
+                <img src="images/banner.png" class="max-w-sm rounded-lg shadow-2xl" />
 
+                <div>
+                    <h1 class="text-5xl font-black leading-[60px]">It's good <br>
+                        tea time at The <br> Tea House</h1>
+                    <p class="py-6 font-medium text-[18px]">Tea and Botanical Solutions Supplier Give Optimum <br>
+                        Satisfaction To Your
+                        Taste Buds.
+                    </p>
+                    <button class="btn btn-primary">Explore More <img src="images/arrow.png"></button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- featured product start -->
+        <section>
+            <h3 class="md:text-5xl text-3xl font-black text-center mt-24">Our Featured Products</h3>
+            <p class="font-medium text-base text-center px-[50px] md:px-[350px] mt-5">There are many variations of
+                passages of Lorem
+                Ipsum
+                available,
+                but the
+                majority have suffered alteration
+                in some form,
+                by injected humour, or randomised words which don't look even slightly believable.</p>
+            <div class="flex flex-col md:flex-row mt-24 items-center md:justify-around">
+                <!-- card 1 -->
+                <div class="card w-64 bg-base-100 shadow-2xl">
+                    <figure><img src="images/tea-1.png" alt="tea" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Milk Tea</h2>
+                        <p>Creamer could be replaced by fresh milk</p>
+                    </div>
+                </div>
+                <!-- card 2 -->
+                <div class="card w-64 bg-base-100 shadow-2xl">
+                    <figure><img src="images/tea-2.png" alt="tea" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Black Tea</h2>
+                        <p>Creamer could be replaced by fresh milk</p>
+                    </div>
+                </div>
+                <!-- card 3 -->
+                <div class="card w-64 bg-base-100 shadow-2xl">
+                    <figure><img src="images/tea-3.png" alt="tea" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Lemon Tea</h2>
+                        <p>Creamer could be replaced by fresh milk</p>
+                    </div>
+                </div>
+                <!-- card 4 -->
+                <div class="card w-64 bg-base-100 shadow-2xl">
+                    <figure><img src="images/tea-4.png" alt="tea" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Green Tea</h2>
+                        <p>Creamer could be replaced by fresh milk</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- featured product end -->
+    </main>
 </body>
 
 </html>
